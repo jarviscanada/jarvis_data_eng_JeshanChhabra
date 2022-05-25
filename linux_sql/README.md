@@ -1,6 +1,6 @@
-                                # LINUX/SQL PROJECT
+                                LINUX/SQL PROJECT
 
-#Introduction
+# Introduction
 This project is designed to monitor system's hardware specification and  usage within specific time intervals controlled by automated crontab jobs and storing the information in the psql database instance created using Docker. Technologies used in this project are:
 1: Linux OS.
 2: Bash Scripting.
@@ -25,7 +25,7 @@ This project is designed to monitor system's hardware specification and  usage w
 -crontab      --- This is used to automate the usage script so that it runs after each interval so that the usage can be monitored later on.
 -queries.sql  --- This script contains the sql queries that a business may use when monitoring the usage information. 
 
-##Database Modelling
+## Database Modelling
 -`host_info` This is the host info
 
 
