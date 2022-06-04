@@ -20,7 +20,7 @@ void process() throws IOException;
  * @return files under the rootDir
  */
 
-List<File> listFiles(String rootDir);
+List<File> listFiles(String rootDir) throws IOException;
 
 /**
  * Read a file and return all the lines
@@ -30,7 +30,7 @@ List<File> listFiles(String rootDir);
  * @throws IllegalArgumentException if a given input fiw is not a file
  */
 
-List<String> readlines(File inputfile);
+List<String> readLines(File inputfile);
 
 /**
  * check if line contains the regex pattern
