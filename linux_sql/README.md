@@ -28,7 +28,7 @@ This project is designed to monitor system's hardware specification and  usage w
 
 
 # Test 
-This is one of the main steps in SLDC. I have tested my all the quries and the scripts locaaly first so that i donot get any kind of errors when running inside the script. Thui has helpmed me to save alot of time in debugging itself.
+This is one of the main steps in SLDC. I have tested my all the quries and the scripts localy first so that i donot get any kind of errors when running inside the script. This has helped me to save alot of time in debugging itself.
 
 
 
