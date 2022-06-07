@@ -1,5 +1,3 @@
-                                # LINUX/SQL PROJECT
-
 # Introduction
 This project is designed to monitor system's hardware specification and  usage within specific time intervals controlled by automated crontab jobs and storing the information in the psql database instance created using Docker. Technologies used in this project are:
 1: Linux OS.
