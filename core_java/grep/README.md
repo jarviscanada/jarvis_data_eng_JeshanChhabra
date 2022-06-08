@@ -27,4 +27,5 @@ Memory issue.
 # Test
 
 # Deployment
-The app is dockerised into 
+The app is build into docker image and has been pushed into the docker hub. (jeshan26/grep). 
+We can pull the image and use it to run the program. 
