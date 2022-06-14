@@ -10,5 +10,5 @@ DAO - This is a structural pattern that alows developer to separate the business
 
 In repository pattern we can only deal with one table per class.Moreover, it is the abstraction of collection of objects.
 # Test
-
+I have manually tested all my queries in the database itself so that i donot get any errors while running the code. I created some views to match and validate the outputs.
 
