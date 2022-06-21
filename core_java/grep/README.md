@@ -25,7 +25,8 @@ with the regex provided. If it matches with the regex, then the line is written 
 Memory issue.
 
 # Test
+I have manually tested this application. I used a sample data to test the functionality of the application. Moreover, i used the IDE debugger in order to test it throughly.
 
 # Deployment
 The app is build into docker image and has been pushed into the docker hub. (jeshan26/grep). 
-We can pull the image and use it to run the program. 
+We can pull the image and use it to run the program and the source code can be found on the github repository. 
