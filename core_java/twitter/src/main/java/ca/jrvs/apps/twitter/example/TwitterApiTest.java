@@ -12,12 +12,12 @@ import org.apache.http.util.EntityUtils;
 import java.util.Arrays;
 
 public class TwitterApiTest {
-    private static String CONSUMER_KEY = "qSSUipKbiSkfnyxENuPtIm7ov";
+    private static String CONSUMER_KEY =  System.getenv("consumerKey");
     
-    private static String CONSUMER_SECRET="XOmpuuzgPUcnZ17RRsTbZKGt1uakT76oKjhsZCedvrxO5bAAUl";
-    private static String ACCESS_TOKEN="764879745590829056-otYyQRNVwKLvl4IT6gp4zmdsgfapDhC";
+    private static String CONSUMER_SECRET=System.getenv("consumerSecret");
+    private static String ACCESS_TOKEN=System.getenv("accessToken");
     
-    private static String TOKEN_SECRET="35hYK3ForVj1Nsh8sTL0U8ksUUT6FxcLwQJcxUIn43HQV";
+    private static String TOKEN_SECRET=System.getenv("tokenSecret");
 
     public static void main(String[] args) throws Exception {
 
