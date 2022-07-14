@@ -12,18 +12,20 @@ import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.DefaultHttpClient;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpMethod;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 import java.net.URI;
+
 @Component
 public class TwitterHelper implements HttpHelper {
 
     private OAuthConsumer consumer;
     private HttpClient httpClient;
 
-    /**
+    /**came
      * Constructor
      *
      *
@@ -32,12 +34,22 @@ public class TwitterHelper implements HttpHelper {
      * @param accessToken
      * @param tokenSecret
      */
+
     public TwitterHelper(String consumerKey, String consumerSecret, String accessToken, String tokenSecret) {
         consumer= new CommonsHttpOAuthConsumer(consumerKey,consumerSecret);
         consumer.setTokenWithSecret(accessToken,tokenSecret);
         httpClient= new DefaultHttpClient();
     }
 
+    public TwitterHelper(){
+        String CONSUMER_KEY = System.getenv("consumerKey");
+        String CONSUMER_SECRET=System.getenv("consumerSecret");
+        String ACCESS_TOKEN=System.getenv("accessToken");
+        String TOKEN_SECRET=System.getenv("tokenSecret");
+        consumer= new CommonsHttpOAuthConsumer(CONSUMER_KEY,CONSUMER_SECRET);
+        consumer.setTokenWithSecret(ACCESS_TOKEN,TOKEN_SECRET);
+        httpClient= new DefaultHttpClient();
+    }
     @Override
     public HttpResponse httpPost(URI uri) {
         try{

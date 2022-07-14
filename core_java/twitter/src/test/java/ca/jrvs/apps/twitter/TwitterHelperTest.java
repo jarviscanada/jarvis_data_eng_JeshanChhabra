@@ -25,13 +25,13 @@ public class TwitterHelperTest {
 
     @Test
     public void httpPost() throws Exception{
-        HttpResponse response = httpHelper.httpPost(new URI("https://api.twitter.com/1.1/statuses/update.json?status=My_tweet&coordinates=1,-1"));
-        System.out.println(EntityUtils.toString(response.getEntity()));
+//        HttpResponse response = httpHelper.httpPost(new URI("https://api.twitter.com/1.1/statuses/update.json?status=My_tweet&coordinates=1,-1"));
+//        System.out.println(EntityUtils.toString(response.getEntity()));
     }
 
     @Test
     public void httpGet() throws Exception{
-        HttpResponse res = httpHelper.httpGet(new URI("https://api.twitter.com/1.1/statuses/show.json?id=1544537250377121792"));
-       System.out.println(EntityUtils.toString(res.getEntity()));
+//        HttpResponse res = httpHelper.httpGet(new URI("https://api.twitter.com/1.1/statuses/show.json?id=1544537250377121792"));
+//       System.out.println(EntityUtils.toString(res.getEntity()));
     }
 }

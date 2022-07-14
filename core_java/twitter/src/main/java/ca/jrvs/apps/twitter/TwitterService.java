@@ -7,6 +7,7 @@ import oauth.signpost.exception.OAuthCommunicationException;
 import oauth.signpost.exception.OAuthException;
 import oauth.signpost.exception.OAuthExpectationFailedException;
 import oauth.signpost.exception.OAuthMessageSignerException;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -14,12 +15,16 @@ import java.util.Arrays;
 import java.util.IllformedLocaleException;
 import java.util.List;
 
+@org.springframework.stereotype.Service
 public class TwitterService implements Service {
 
     CrdDao dao;
 
+    @Autowired
     public TwitterService(CrdDao dao) {
+        System.out.println("servics");
         this.dao = dao;
+
     }
 
     @Override
@@ -41,34 +46,34 @@ public class TwitterService implements Service {
     Tweet modifiedTweet = new Tweet();
         Arrays.stream(fields).forEach(property -> {
 
-            if (property == "id"){
+            if (property.equals("id") ){
                 modifiedTweet.setId(response.getId());
             }
-            else if (property == "id_str"){
+            else if (property.equals("id_str")){
                 modifiedTweet.setId(response.getId());
             }
-            else if (property == "created_at"){
+            else if (property.equals("created_at")){
                 modifiedTweet.setCreated_at(response.getCreated_at());
             }
-            else if (property == "text"){
+            else if (property.equals("text")){
                 modifiedTweet.setText(response.getText());
             }
-            else if (property == "entities"){
+            else if (property.equals("entities")){
                 modifiedTweet.setEntities(response.getEntities());
             }
-            else if (property == "coordinates"){
+            else if (property.equals("coordinates")){
                 modifiedTweet.setCoordinates(response.getCoordinates());
             }
             else if (property == "retweet_count"){
                 modifiedTweet.setRetweet_count(response.getRetweet_count());
             }
-            else if (property == "favorite_count"){
+            else if (property.equals("favorite_count")){
                 modifiedTweet.setFavorite_count(response.getFavorite_count());
             }
-            else if (property == "favorited"){
+            else if (property.equals("favorited")){
                 modifiedTweet.setFavorited(response.isFavorited());
             }
-            else if (property == "retweeted"){
+            else if (property.equals("retweeted")){
                 modifiedTweet.setRetweeted(response.isRetweeted());
             }
         });
@@ -92,9 +97,8 @@ public class TwitterService implements Service {
             try {
                 deletedTweetList.add((Tweet) this.dao.deleteById(id));
             }catch(OAuthException | IOException e){
-                throw new RuntimeException("");
+                throw new RuntimeException("Tweet does not exists");
             }
-
         });
 
         return deletedTweetList;

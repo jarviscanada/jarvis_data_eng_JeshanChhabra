@@ -30,31 +30,31 @@ public class TwitterServiceTest {
         this.service = new TwitterService(dao);
     }
 
-    @Test
-    public void postTweet() throws OAuthMessageSignerException, OAuthExpectationFailedException, IOException, OAuthCommunicationException {
-        Tweet tweet = new Tweet();
-        tweet = TweetUtil.buildTweet("Nwe virat is here",79.0f,178.7f);
-        tweet = this.service.postTweet(tweet);
-    }
-
-    @Test
-    public void showTweet() throws OAuthMessageSignerException, OAuthExpectationFailedException, IOException, OAuthCommunicationException {
-        String[] fields = {} ;
-        Tweet response = service.showTweet("1544823987582017536",fields);
-        System.out.println(response);
-    }
-
-    @Test
-    public void deleteTweets() {
-
-        String[] ids = {"766692486022508544","1546544404768473089"};
-
-        List<Tweet> tweet;
-        tweet = this.service.deleteTweets(ids);
-
-        assertEquals(tweet.get(0).getId(),ids[0]);
-        assertEquals(tweet.get(0).getId(),ids[1]);
-
-
-    }
+//    @Test
+//    public void postTweet() throws OAuthMessageSignerException, OAuthExpectationFailedException, IOException, OAuthCommunicationException {
+//        String text = "Nwe virat is here";
+//        Tweet tweet = new Tweet();
+//
+//        tweet = TweetUtil.buildTweet(text,79.0f,178.7f);
+//        tweet = this.service.postTweet(tweet);
+//        assertEquals(text,tweet.getText());
+//    }
+//
+//    @Test
+//    public void showTweet() throws OAuthMessageSignerException, OAuthExpectationFailedException, IOException, OAuthCommunicationException {
+//        String[] fields = {"id","id_str","entities"} ;
+//        Tweet response = service.showTweet("1544823987582017536",fields);
+//        assertEquals("1544823987582017536",response.getId());
+//    }
+//
+//    @Test
+//    public void deleteTweets() {
+//        String[] ids = {"766692486022508544","1546544404768473089"};
+//        List<Tweet> tweet;
+//        tweet = this.service.deleteTweets(ids);
+//        assertEquals(tweet.get(0).getId(),ids[0]);
+//        assertEquals(tweet.get(0).getId(),ids[1]);
+//
+//
+//    }
 }

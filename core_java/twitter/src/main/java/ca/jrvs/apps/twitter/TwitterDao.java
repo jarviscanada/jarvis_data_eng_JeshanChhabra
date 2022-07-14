@@ -14,12 +14,14 @@ import org.apache.http.HttpResponse;
 import org.apache.http.protocol.HTTP;
 import org.apache.http.util.EntityUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.rmi.RemoteException;
 
+@Repository
 public class TwitterDao implements CrdDao<Tweet,String> {
 
  // URI constraints
@@ -42,7 +44,7 @@ public class TwitterDao implements CrdDao<Tweet,String> {
     @Autowired
     public TwitterDao(HttpHelper httpHelper) {
         this.httpHelper = httpHelper;
-    }
+      }
 
     @Override
     public Tweet create(Tweet entity) throws OAuthMessageSignerException, OAuthExpectationFailedException, IOException, OAuthCommunicationException {
@@ -55,8 +57,6 @@ public class TwitterDao implements CrdDao<Tweet,String> {
             throw new RuntimeException("Invalid URI syntax");
         }
         HttpResponse response = httpHelper.httpPost(uri);
-        System.out.println("RESPONSE");
-
         return parseResponseBody(response,HTTP_OK);
     }
 
@@ -90,7 +90,7 @@ public class TwitterDao implements CrdDao<Tweet,String> {
         }
 
         HttpResponse res = httpHelper.httpPost(uri);
-
+        System.out.println(res.getStatusLine().getStatusCode());
         return parseResponseBody(res,HTTP_OK);
     }
 
@@ -106,7 +106,7 @@ public class TwitterDao implements CrdDao<Tweet,String> {
         int status = res.getStatusLine().getStatusCode();
         if (status != expectedCode){
             try{
-                System.out.println(EntityUtils.toString(res.getEntity()));
+                EntityUtils.toString(res.getEntity());
             }catch(IOException e){
                 throw new RuntimeException("No response body");
             }
@@ -118,7 +118,7 @@ public class TwitterDao implements CrdDao<Tweet,String> {
         // converting entity to string
      try {
          jsonStr = EntityUtils.toString(res.getEntity());
-         System.out.println(jsonStr);
+         //System.out.println(jsonStr);
      }catch(IOException e){
          e.printStackTrace();
          throw new RuntimeException("Cannot convert entity to str");
