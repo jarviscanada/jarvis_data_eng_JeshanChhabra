@@ -1,5 +1,4 @@
 # Introduction
-(50-100 words)
 This project is designed to implement Twitter API(v1.1) to Create,Read and Delete the tweets. Technologies used in this project are Twitter Rest Api to make the desired  rest calls, HTTP client  to excecute each API requests , maven to build , Java libraries , and docker to upload the app.
 
 
@@ -24,4 +23,4 @@ The application is well tested with the help of JUnit4, by testing each componen
 I have created a dockerfile which helps to build the docker image from jar file. Further, the image is pushed into the docker hub with the name (jeshan26/twitter). 
 
 # Improvements
-- Better structure.
+- Better structure and code readability.
