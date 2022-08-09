@@ -3,7 +3,7 @@
 */
 
 SELECT cpu_number,host_id, total_mem 
-form host_info 
+FROM host_info 
 Group by cpu_number,host_id,total_mem 
 order by host_id asc, total_mem desc;
 
