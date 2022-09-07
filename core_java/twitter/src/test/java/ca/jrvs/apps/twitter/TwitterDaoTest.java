@@ -50,15 +50,15 @@ public class TwitterDaoTest {
 //
 //    }
 
-//    @Test
-//    public void findById() throws OAuthMessageSignerException, OAuthExpectationFailedException, IOException, OAuthCommunicationException {
-////    Tweet tweet = this.dao.findById(TwitterDaoTest.postTweet.getId_str() );
-//
-//        Tweet tweet = this.dao.findById("1544912144965279744");
-//        System.out.println("kida /n"+tweet);
-//
-//
-//    }
+    @Test
+    public void findById() throws OAuthMessageSignerException, OAuthExpectationFailedException, IOException, OAuthCommunicationException {
+//    Tweet tweet = this.dao.findById(TwitterDaoTest.postTweet.getId_str() );
+
+        Tweet tweet = this.dao.findById("1547449896864780288");
+        System.out.println("kida /n"+tweet);
+
+
+    }
 
 //    @Test
 //    public void deleteById() throws OAuthMessageSignerException, OAuthExpectationFailedException, IOException, OAuthCommunicationException {

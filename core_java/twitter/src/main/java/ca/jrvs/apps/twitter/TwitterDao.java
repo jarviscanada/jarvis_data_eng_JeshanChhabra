@@ -118,7 +118,7 @@ public class TwitterDao implements CrdDao<Tweet,String> {
         // converting entity to string
      try {
          jsonStr = EntityUtils.toString(res.getEntity());
-         //System.out.println(jsonStr);
+         System.out.println("hmmm   "+jsonStr);
      }catch(IOException e){
          e.printStackTrace();
          throw new RuntimeException("Cannot convert entity to str");
