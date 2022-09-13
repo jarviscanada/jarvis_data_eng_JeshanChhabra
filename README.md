@@ -6,9 +6,9 @@ Logical and results-driven Software Developer who always aims to complete a give
 
 **Proficient:** Java, Linux/Bash, RDBMS/SQL, Agile/Scrum, Git
 
-**Competent:** Docker, Rest API's, JIRA, fermentum, Donec
+**Competent:** Docker, REST API's, JIRA, fermentum, Donec
 
-**Familiar:** CSS, JAVASCRIPT, Angular, HTML, Node.js
+**Familiar:** CSS, JAVASCRIPT, HTML, NODE.JS, Angular
 
 ## Jarvis Projects
 
@@ -19,9 +19,9 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_JeshanChha
 
 **Core Java Apps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_JeshanChhabra/tree/master/core_java)]:
       
-  - Twitter App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.
-  - JDBC App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.
-  - Grep App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.
+  - Twitter App: Implemented the twitter Rest API to create,read and delete the tweets. Used Spring, Java Libraries, Maven etc to build the application and tested and deployed using JUnit and Docker respectively. 
+  - JDBC App: Implemented a database connectivity application which connects to PostgreSQL database and perform manupulation on tables. It also implements the CRUD Operations with JDBC API'S which allows us to create, read, update and delete in the database.
+  - Grep App: Developed the Linux grep command in Java to search the text pattern recursively in a given directory and output the matched result to the file path provided.
 
 **Springboot App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_JeshanChhabra/tree/master/springboot)]: Not Started
 
@@ -35,25 +35,30 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_JeshanChha
 
 
 ## Highlighted Projects
-**JAVA Client-Server application** [[GitHub](https://github.com/Jeshan26/Network_Pc_Comparison)]: Developed a server-client network in such a way that , a client can control the hardware by just running the server on it. 
+** Client-** [[GitHub](https://github.com/jarviscanada/jarvis_profile_builder)]: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
+
+**Machine Learning**: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
 
 
 ## Professional Experiences
 
-**Software Developer, Jarvis (2020-present)**: Developed various projects and solved business problems in them.Followed the agile methodlogy to manage teams
+**Software Developer, Jarvis (2022-present)**: Worked in the Agile team and developed various client need with help of JAVA, SpringBoot to make applications efficient.
 
-**Front-end Developer, Intransigence (April 2020 - September 2020)**: Developed UI/UX components using Angular framework with a pre-designed business Model and with my own innovation. I developed REST API's that managed communication with the backend in NODE.JS. Also tested them using POSTMAN.
+**Junior Developer, Intransigence (April 2020 - September 2020)**: Developed UI/UX components using Angular framework with a pre-designed business Model and with my own innovation. I developed REST API's that managed communication with the backend in NODE.JS. Also tested them using POSTMAN..
 
 
 ## Education
-**Georgian College (2019-2021)**, Diploma degree, Computer Programming
-- Dean's List in each semester
-- GPA: 3.7/4.0
+**Georgian College (2019-2021)**, Diploma Degree, Computer Programming
+- Scholarship
+- Dean's List (2015, 2016): Ut enim ad minim veniam
+- GPA: 3.8/4.0
+
+**XYZ university (2016-2018)**, Master of Engineering, Electrical and Computer Engineering
 
 
 ## Miscellaneous
 - Udacity Machine Learning (2019)
 - Winner
-- Basketball player
+- Cricket player
 - Competitive gaming
 - Volunteer, ABC Food bank: Ut enim ad minim veniam
