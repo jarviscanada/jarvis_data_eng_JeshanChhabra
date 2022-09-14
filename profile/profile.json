@@ -22,19 +22,19 @@
   "github_repo_root_url": "https://github.com/jarviscanada/jarvis_data_eng_JeshanChhabra",
   "highlighted_projects": [
     {
-      "description": "Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.",
-      "git_url": "https://github.com/jarviscanada/jarvis_profile_builder",
-      "name": " Client-"
+      "description": "Developed an application which can control any PC in the same network by running the server on the client(client- server communication).",
+      "git_url": "https://github.com/Jeshan26/Network_Pc_Comparison",
+      "name": "Network-PC Comparison"
     },
     {
-      "description": "Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.",
+      "description": "Developed an E-Commerce website that performs CRUD Operations and is connected to Database(MongoDb). This is a frontend website that stores the users account details and share a common static page that lists all the items added.",
       "git_url": null,
-      "name": "Machine Learning"
+      "name": "E-Commerce website"
     }
   ],
   "jarvis_projects": [
     {
-      "description": "Implemented a solution to monitor the hardware specifications and usage of each node in the cluster over time with help of Bash. All the data received by the automated crontab job is stored in the PostgreSQL server which runs inside the docker container.",
+      "description": "Implemented a solution to monitor the hardware specifications and usage of each node in the cluster over time with help of Bash. All the data received by the automated crontab job and  is stored in the PostgreSQL server which runs inside the docker container.",
       "git_url": "/linux_sql",
       "name": "Cluster Monitor"
     },
@@ -48,7 +48,7 @@
       "name": "Core Java Apps"
     },
     {
-      "description": "",
+      "description": "Developing a stateless Data processing application(a trading platform based on IEX Cloud API) that performs the CRUD operations and persist the data in the database. This is a REST API which can be consumed by other applications in order to manage user profiles and monitor trade performances.",
       "git_url": "/springboot",
       "name": "Springboot App"
     },
@@ -83,15 +83,16 @@
     },
     {
       "bullets": [
-        "Winner"
+        "Winner",
+        " "
       ],
       "title": "Awards"
     },
     {
       "bullets": [
-        "Cricket player",
+        "Cricket player in the local city club",
         "Competitive gaming",
-        "Volunteer, ABC Food bank: Ut enim ad minim veniam"
+        "Writing poems"
       ],
       "title": "Activities/Hobbies"
     }
@@ -115,12 +116,12 @@
       "Docker",
       "REST API's",
       "JIRA",
-      "fermentum",
-      "Donec"
+      "Javascript",
+      "Microsoft Office"
     ],
     "familiar": [
       "CSS",
-      "JAVASCRIPT",
+      "Vue.js",
       "HTML",
       "NODE.JS",
       "Angular"
@@ -129,7 +130,7 @@
       "Java",
       "Linux/Bash",
       "RDBMS/SQL",
-      "Agile/Scrum",
+      "Spring Boot",
       "Git"
     ]
   },

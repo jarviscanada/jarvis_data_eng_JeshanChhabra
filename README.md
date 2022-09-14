@@ -4,18 +4,18 @@ Logical and results-driven Software Developer who always aims to complete a give
 
 ## Skills
 
-**Proficient:** Java, Linux/Bash, RDBMS/SQL, Agile/Scrum, Git
+**Proficient:** Java, Linux/Bash, RDBMS/SQL, Spring Boot, Git
 
-**Competent:** Docker, REST API's, JIRA, fermentum, Donec
+**Competent:** Docker, REST API's, JIRA, Javascript, Microsoft Office
 
-**Familiar:** CSS, JAVASCRIPT, HTML, NODE.JS, Angular
+**Familiar:** CSS, Vue.js, HTML, NODE.JS, Angular
 
 ## Jarvis Projects
 
 Project source code: [https://github.com/jarviscanada/jarvis_data_eng_JeshanChhabra](https://github.com/jarviscanada/jarvis_data_eng_JeshanChhabra)
 
 
-**Cluster Monitor** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_JeshanChhabra/tree/master/linux_sql)]: Implemented a solution to monitor the hardware specifications and usage of each node in the cluster over time with help of Bash. All the data received by the automated crontab job is stored in the PostgreSQL server which runs inside the docker container.
+**Cluster Monitor** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_JeshanChhabra/tree/master/linux_sql)]: Implemented a solution to monitor the hardware specifications and usage of each node in the cluster over time with help of Bash. All the data received by the automated crontab job and  is stored in the PostgreSQL server which runs inside the docker container.
 
 **Core Java Apps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_JeshanChhabra/tree/master/core_java)]:
       
@@ -23,7 +23,7 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_JeshanChha
   - JDBC App: Implemented a database connectivity application which connects to PostgreSQL database and perform manupulation on tables. It also implements the CRUD Operations with JDBC API'S which allows us to create, read, update and delete in the database.
   - Grep App: Developed the Linux grep command in Java to search the text pattern recursively in a given directory and output the matched result to the file path provided.
 
-**Springboot App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_JeshanChhabra/tree/master/springboot)]: Not Started
+**Springboot App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_JeshanChhabra/tree/master/springboot)]: Developing a stateless Data processing application(a trading platform based on IEX Cloud API) that performs the CRUD operations and persist the data in the database. This is a REST API which can be consumed by other applications in order to manage user profiles and monitor trade performances.
 
 **Python Data Analytics** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_JeshanChhabra/tree/master/python_data_anlytics)]: Not Started
 
@@ -35,9 +35,9 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_JeshanChha
 
 
 ## Highlighted Projects
-** Client-** [[GitHub](https://github.com/jarviscanada/jarvis_profile_builder)]: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
+**Network-PC Comparison** [[GitHub](https://github.com/Jeshan26/Network_Pc_Comparison)]: Developed an application which can control any PC in the same network by running the server on the client(client- server communication).
 
-**Machine Learning**: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
+**E-Commerce website**: Developed an E-Commerce website that performs CRUD Operations and is connected to Database(MongoDb). This is a frontend website that stores the users account details and share a common static page that lists all the items added.
 
 
 ## Professional Experiences
@@ -59,6 +59,7 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_JeshanChha
 ## Miscellaneous
 - Udacity Machine Learning (2019)
 - Winner
-- Cricket player
+-  
+- Cricket player in the local city club
 - Competitive gaming
-- Volunteer, ABC Food bank: Ut enim ad minim veniam
+- Writing poems
