@@ -15,19 +15,19 @@ skills:
     - Java
     - Linux/Bash
     - RDBMS/SQL
-    - Agile/Scrum
+    - Spring Boot
     - Git
   # At least 5 skills
   competent:
     - Docker
     - REST API's
     - JIRA
-    - fermentum
-    - Donec
+    - Javascript
+    - Microsoft Office
   # At least 5 skills
   familiar:
     - CSS
-    - JAVASCRIPT
+    - Vue.js
     - HTML
     - NODE.JS
     - Angular
@@ -38,7 +38,7 @@ jarvis_projects:
     git_url: "/linux_sql"
     # The project description allows hiring managers to understand your project and technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
     # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description: Implemented a solution to monitor the hardware specifications and usage of each node in the cluster over time with help of Bash. All the data received by the automated crontab job is stored in the PostgreSQL server which runs inside the docker container.
+    description: Implemented a solution to monitor the hardware specifications and usage of each node in the cluster over time with help of Bash. All the data received by the automated crontab job and  is stored in the PostgreSQL server which runs inside the docker container.
   - name: "Core Java Apps"
     git_url: "/core_java"
     description:
@@ -47,7 +47,7 @@ jarvis_projects:
       - "Grep App: Developed the Linux grep command in Java to search the text pattern recursively in a given directory and output the matched result to the file path provided."
   - name: "Springboot App"
     git_url: "/springboot"
-    description: ""
+    description: "Developing a stateless Data processing application(a trading platform based on IEX Cloud API) that performs the CRUD operations and persist the data in the database. This is a REST API which can be consumed by other applications in order to manage user profiles and monitor trade performances."
   - name: "Python Data Analytics"
     git_url: "/python_data_anlytics"
     description: ""
@@ -65,14 +65,14 @@ jarvis_projects:
 # Feel free to add more projects
 highlighted_projects:
     #project name
-  - name: " Client-"
+  - name: "Network-PC Comparison"
     #URL is optional
-    git_url: "https://github.com/jarviscanada/jarvis_profile_builder"
+    git_url: "https://github.com/Jeshan26/Network_Pc_Comparison"
     # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
-  - name: "Machine Learning"
+    description: Developed an application which can control any PC in the same network by running the server on the client(client- server communication).
+  - name: "E-Commerce website"
     git_url:
-    description: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
+    description: Developed an E-Commerce website that performs CRUD Operations and is connected to Database(MongoDb). This is a frontend website that stores the users account details and share a common static page that lists all the items added. 
 
 #List of professional experience
 #The job description allows hiring managers to understand your job and the technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
@@ -116,8 +116,9 @@ others:
   - title: "Awards"
     bullets:
       - "Winner"
+      - " "
   - title: "Activities/Hobbies"
     bullets:
-      - "Cricket player"
+      - "Cricket player in the local city club"
       - "Competitive gaming"
-      - "Volunteer, ABC Food bank: Ut enim ad minim veniam"
+      - "Writing poems"
