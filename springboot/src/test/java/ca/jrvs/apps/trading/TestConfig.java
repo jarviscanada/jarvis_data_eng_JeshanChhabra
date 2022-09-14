@@ -26,9 +26,21 @@ public MarketDataConfig marketDataConfig(){
 public DataSource dataSource(){
 
     System.out.println("Creating apacheDatasource");
-    String url = System.getenv("PSQL_URL");
-    String user = System.getenv("PSQL_USER");
-    String password = System.getenv("PSQL_PASSWORD");
+//    String url = "jdbc:postgresql://" +
+//                    System.getenv("PSQL_HOST") + ":" +
+//                    System.getenv("PSQL_PORT") +
+//                    "/" +
+//                    System.getenv("PSQL_DB");
+//
+//    String user = System.getenv("PSQL_USER");
+//    String password = System.getenv("PSQL_PASSWORD");
+
+    String url = "jdbc:postgresql://localhost"+ ":5432" +
+            "/tradingtest";
+
+    String user = "postgres";
+    String password = "password";
+
     BasicDataSource basicDataSource = new BasicDataSource();
     basicDataSource.setUrl(url);
     basicDataSource.setUsername(user);

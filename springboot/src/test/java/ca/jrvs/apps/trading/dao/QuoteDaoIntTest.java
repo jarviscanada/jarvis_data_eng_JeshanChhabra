@@ -21,7 +21,7 @@ public class QuoteDaoIntTest {
     @Autowired
     private QuoteDao quoteDao;
 
-    private Quote savedQuote;
+    private Quote savedQuote = new Quote();
 
     @Test
     @Before
@@ -36,11 +36,11 @@ public class QuoteDaoIntTest {
         quoteDao.save(savedQuote);
     }
 
-    @Test
-    @After
-    public void deleteOne(){
-        quoteDao.deleteById(savedQuote.getId());
-    }
-
-
+//    @Test
+//    @After
+//    public void deleteOne(){
+//        quoteDao.deleteById(savedQuote.getId());
+//    }
+//
+//
 }
