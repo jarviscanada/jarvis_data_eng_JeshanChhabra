@@ -26,7 +26,7 @@ This project is designed to monitor system's hardware specification and  usage w
 ## Database Modelling
 -`host_info` This is the host info
 
-i
+
 # Test 
 This is one of the main steps in SLDC. I have tested my all the queries and the scripts localy first so that i donot get any kind of errors when running inside the script. This has helped me to save alot of time in debugging itself.
 
@@ -39,7 +39,6 @@ I have deployed the application in the Github only. All the information about th
 # Improvements
 
 - I want to improve my psql queries so that they run more faster for easy retrieval.
-
 
 
 
