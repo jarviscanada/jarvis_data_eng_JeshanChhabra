@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Introduction
 This project is designed to monitor system's hardware specification and  usage within specific time intervals controlled by automated crontab jobs and storing the information in the psql database instance created using Docker. Technologies used in this project are:
 1: Linux OS.
@@ -39,8 +40,5 @@ I have deployed the application in the Github only. All the information about th
 # Improvements
 
 - I want to improve my psql queries so that they run more faster for easy retrieval.
-
-
-
 
 
