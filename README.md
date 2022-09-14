@@ -42,7 +42,7 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_JeshanChha
 
 ## Professional Experiences
 
-**Software Developer, Jarvis (2022-present)**: Worked in the Agile team and developed various client need with help of JAVA, SpringBoot to make applications efficient.
+**Software Developer, Jarvis (2022-present)**: Demonstrated expertise in translating client needs into easy-to-understand software solutions. Proficient in troubleshooting/debugging the applications to achieve quick results. Developed various projects with technologies like  JAVA,Springboot, Docker/ Sql and so on which has strengthened my skills and made me proficent in solving client needs.
 
 **Junior Developer, Intransigence (April 2020 - September 2020)**: Developed UI/UX components using Angular framework with a pre-designed business Model and with my own innovation. I developed REST API's that managed communication with the backend in NODE.JS. Also tested them using POSTMAN..
 
@@ -50,7 +50,7 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_JeshanChha
 ## Education
 **Georgian College (2019-2021)**, Diploma Degree, Computer Programming
 - Scholarship
-- Dean's List (2015, 2016): Ut enim ad minim veniam
+- Dean's List in all the semesters
 - GPA: 3.8/4.0
 
 **XYZ university (2016-2018)**, Master of Engineering, Electrical and Computer Engineering

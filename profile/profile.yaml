@@ -83,7 +83,7 @@ professional_experience:
     company: "Jarvis"
     duration: "2022-present"
     # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description: "Worked in the Agile team and developed various client need with help of JAVA, SpringBoot to make applications efficient."
+    description: "Demonstrated expertise in translating client needs into easy-to-understand software solutions. Proficient in troubleshooting/debugging the applications to achieve quick results. Developed various projects with technologies like  JAVA,Springboot, Docker/ Sql and so on which has strengthened my skills and made me proficent in solving client needs."
   - title: "Junior Developer"
     company: "Intransigence"
     duration: "April 2020 - September 2020"
@@ -98,7 +98,7 @@ education:
     # optional
     awards_achievements: 
       - "Scholarship"
-      - "Dean's List (2015, 2016): Ut enim ad minim veniam"
+      - "Dean's List in all the semesters"
       - "GPA: 3.8/4.0"
   - school_name: "XYZ university"
     duration: "2016-2018"
