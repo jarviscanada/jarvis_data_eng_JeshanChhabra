@@ -3,11 +3,10 @@ name: "Jeshan Chhabra"
 # Your GitHub repo root URL
 github_repo_root_url: https://github.com/jarviscanada/jarvis_data_eng_JeshanChhabra
 
-
 # Introduce yourself, your academic and professional background.
 # What excites you about the software industry and your passion. At least 80 words
+summary: Logical and results-driven Software Developer who always aims to complete a given task on desired time.Technically, proficient and analytical problem solver with a calm and focused demeanor. I'm skilled in developing Java Applications and connecting them with the databases. Apart from this, I always enjoy playing Cricket which also helped me to be a great team player. To conclude, i am looking for the oppurtunity to showcase my skillset in the backend developer role.
 
-summary: "Logical and results-driven Software Developer who always aims to complete a given task on desired time.Technically, proficient and analytical problem solver with a calm and focused demeanor. I'm skilled in developing Java Applications and connecting them with the databases. Apart from this, I always enjoy playing Cricket which also helped me to be a great team player. To conclude, i am looking for the oppurtunity to showcase my skillset in the backend developer role." 
 # Group your skills by level.
 # Your skills can be anything software related (e.g. language, frameworks, methodologies, software, etc.).
 skills:
@@ -16,38 +15,39 @@ skills:
     - Java
     - Linux/Bash
     - RDBMS/SQL
-    - Agile/Scrum
+    - Spring Boot
     - Git
   # At least 5 skills
   competent:
     - Docker
-    - Rest API's
+    - REST API's
     - JIRA
-    - fermentum
-    - Donec
+    - Javascript
+    - Microsoft Office
   # At least 5 skills
   familiar:
     - CSS
-    - JAVASCRIPT
-    - Angular
+    - Vue.js
     - HTML
-    - Node.js
- # List of Jarvis projects
+    - NODE.JS
+    - Angular
+
+# List of Jarvis projects
 jarvis_projects:
   - name: "Cluster Monitor"
     git_url: "/linux_sql"
     # The project description allows hiring managers to understand your project and technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
     # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description: "Implemented a solution to monitor the hardware specifications and usage of each node in the cluster over time with help of Bash. All the data received by the automated crontab job is stored in the PostgreSQL server which runs inside the docker container."
+    description: Implemented a solution to monitor the hardware specifications and usage of each node in the cluster over time with help of Bash. All the data received by the automated crontab job and  is stored in the PostgreSQL server which runs inside the docker container.
   - name: "Core Java Apps"
     git_url: "/core_java"
     description:
-      - "Twitter App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
-      - "JDBC App: Implemented a database connectivity application which connects to PostgreSQL database and perform manupulation on tables. It also implements the CRUD Operations with JDBC API'S which allows us to create, read, update and delete in the database. "
+      - "Twitter App: Implemented the twitter Rest API to create,read and delete the tweets. Used Spring, Java Libraries, Maven etc to build the application and tested and deployed using JUnit and Docker respectively. "
+      - "JDBC App: Implemented a database connectivity application which connects to PostgreSQL database and perform manupulation on tables. It also implements the CRUD Operations with JDBC API'S which allows us to create, read, update and delete in the database."
       - "Grep App: Developed the Linux grep command in Java to search the text pattern recursively in a given directory and output the matched result to the file path provided."
   - name: "Springboot App"
     git_url: "/springboot"
-    description: ""
+    description: "Developing a stateless Data processing application(a trading platform based on IEX Cloud API) that performs the CRUD operations and persist the data in the database. This is a REST API which can be consumed by other applications in order to manage user profiles and monitor trade performances."
   - name: "Python Data Analytics"
     git_url: "/python_data_anlytics"
     description: ""
@@ -65,11 +65,14 @@ jarvis_projects:
 # Feel free to add more projects
 highlighted_projects:
     #project name
-  - name: "JAVA Client-Server application"
+  - name: "Network-PC Comparison"
     #URL is optional
     git_url: "https://github.com/Jeshan26/Network_Pc_Comparison"
     # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description: "Developed a server-client network in such a way that , a client can control the hardware by just running the server on it. "  
+    description: Developed an application which can control any PC in the same network by running the server on the client(client- server communication).
+  - name: "E-Commerce website"
+    git_url:
+    description: Developed an E-Commerce website that performs CRUD Operations and is connected to Database(MongoDb). This is a frontend website that stores the users account details and share a common static page that lists all the items added. 
 
 #List of professional experience
 #The job description allows hiring managers to understand your job and the technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
@@ -78,24 +81,30 @@ professional_experience:
   #Write your Jarvis role as a professional experience rather than training.
   - title: "Software Developer"
     company: "Jarvis"
-    duration: "2020-present"
+    duration: "2022-present"
     # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description: "Developed various projects and solved business problems in them.Followed the agile methodlogy to manage teams"
-  - title: "Front-end Developer"
+    description: "Demonstrated expertise in translating client needs into easy-to-understand software solutions. Proficient in troubleshooting/debugging the applications to achieve quick results. Developed various projects with technologies like  JAVA,Springboot, Docker/ Sql and so on which has strengthened my skills and made me proficent in solving client needs."
+  - title: "Junior Developer"
     company: "Intransigence"
     duration: "April 2020 - September 2020"
-    description: "Developed UI/UX components using Angular framework with a pre-designed business Model and with my own innovation. I developed REST API's that managed communication with the backend in NODE.JS. Also tested them using POSTMAN."
+    description: "Developed UI/UX components using Angular framework with a pre-designed business Model and with my own innovation. I developed REST API's that managed communication with the backend in NODE.JS. Also tested them using POSTMAN.."
 
 #List of edcuation
 education: 
   - school_name: "Georgian College"
     duration: "2019-2021"
-    degree: "Diploma degree"
+    degree: "Diploma Degree"
     department: "Computer Programming"
     # optional
     awards_achievements: 
-      - "Dean's List in each semester"
-      - "GPA: 3.7/4.0"
+      - "Scholarship"
+      - "Dean's List in all the semesters"
+      - "GPA: 3.8/4.0"
+  - school_name: "XYZ university"
+    duration: "2016-2018"
+    degree: "Master of Engineering"
+    department: "Electrical and Computer Engineering"
+    awards_achievements: 
 
 #Optional section
 others:
@@ -107,8 +116,9 @@ others:
   - title: "Awards"
     bullets:
       - "Winner"
+      - " "
   - title: "Activities/Hobbies"
     bullets:
-      - "Basketball player"
+      - "Cricket player in the local city club"
       - "Competitive gaming"
-      - "Volunteer, ABC Food bank: Ut enim ad minim veniam"
+      - "Writing poems"

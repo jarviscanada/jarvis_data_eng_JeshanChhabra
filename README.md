@@ -4,26 +4,26 @@ Logical and results-driven Software Developer who always aims to complete a give
 
 ## Skills
 
-**Proficient:** Java, Linux/Bash, RDBMS/SQL, Agile/Scrum, Git
+**Proficient:** Java, Linux/Bash, RDBMS/SQL, Spring Boot, Git
 
-**Competent:** Docker, Rest API's, JIRA, fermentum, Donec
+**Competent:** Docker, REST API's, JIRA, Javascript, Microsoft Office
 
-**Familiar:** CSS, JAVASCRIPT, Angular, HTML, Node.js
+**Familiar:** CSS, Vue.js, HTML, NODE.JS, Angular
 
 ## Jarvis Projects
 
 Project source code: [https://github.com/jarviscanada/jarvis_data_eng_JeshanChhabra](https://github.com/jarviscanada/jarvis_data_eng_JeshanChhabra)
 
 
-**Cluster Monitor** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_JeshanChhabra/tree/master/linux_sql)]: Implemented a solution to monitor the hardware specifications and usage of each node in the cluster over time with help of Bash. All the data received by the automated crontab job is stored in the PostgreSQL server which runs inside the docker container.
+**Cluster Monitor** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_JeshanChhabra/tree/master/linux_sql)]: Implemented a solution to monitor the hardware specifications and usage of each node in the cluster over time with help of Bash. All the data received by the automated crontab job and  is stored in the PostgreSQL server which runs inside the docker container.
 
 **Core Java Apps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_JeshanChhabra/tree/master/core_java)]:
       
-  - Twitter App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.
-  - JDBC App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.
-  - Grep App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.
+  - Twitter App: Implemented the twitter Rest API to create,read and delete the tweets. Used Spring, Java Libraries, Maven etc to build the application and tested and deployed using JUnit and Docker respectively. 
+  - JDBC App: Implemented a database connectivity application which connects to PostgreSQL database and perform manupulation on tables. It also implements the CRUD Operations with JDBC API'S which allows us to create, read, update and delete in the database.
+  - Grep App: Developed the Linux grep command in Java to search the text pattern recursively in a given directory and output the matched result to the file path provided.
 
-**Springboot App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_JeshanChhabra/tree/master/springboot)]: Not Started
+**Springboot App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_JeshanChhabra/tree/master/springboot)]: Developing a stateless Data processing application(a trading platform based on IEX Cloud API) that performs the CRUD operations and persist the data in the database. This is a REST API which can be consumed by other applications in order to manage user profiles and monitor trade performances.
 
 **Python Data Analytics** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_JeshanChhabra/tree/master/python_data_anlytics)]: Not Started
 
@@ -35,25 +35,31 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_JeshanChha
 
 
 ## Highlighted Projects
-**JAVA Client-Server application** [[GitHub](https://github.com/Jeshan26/Network_Pc_Comparison)]: Developed a server-client network in such a way that , a client can control the hardware by just running the server on it. 
+**Network-PC Comparison** [[GitHub](https://github.com/Jeshan26/Network_Pc_Comparison)]: Developed an application which can control any PC in the same network by running the server on the client(client- server communication).
+
+**E-Commerce website**: Developed an E-Commerce website that performs CRUD Operations and is connected to Database(MongoDb). This is a frontend website that stores the users account details and share a common static page that lists all the items added.
 
 
 ## Professional Experiences
 
-**Software Developer, Jarvis (2020-present)**: Developed various projects and solved business problems in them.Followed the agile methodlogy to manage teams
+**Software Developer, Jarvis (2022-present)**: Demonstrated expertise in translating client needs into easy-to-understand software solutions. Proficient in troubleshooting/debugging the applications to achieve quick results. Developed various projects with technologies like  JAVA,Springboot, Docker/ Sql and so on which has strengthened my skills and made me proficent in solving client needs.
 
-**Front-end Developer, Intransigence (April 2020 - September 2020)**: Developed UI/UX components using Angular framework with a pre-designed business Model and with my own innovation. I developed REST API's that managed communication with the backend in NODE.JS. Also tested them using POSTMAN.
+**Junior Developer, Intransigence (April 2020 - September 2020)**: Developed UI/UX components using Angular framework with a pre-designed business Model and with my own innovation. I developed REST API's that managed communication with the backend in NODE.JS. Also tested them using POSTMAN..
 
 
 ## Education
-**Georgian College (2019-2021)**, Diploma degree, Computer Programming
-- Dean's List in each semester
-- GPA: 3.7/4.0
+**Georgian College (2019-2021)**, Diploma Degree, Computer Programming
+- Scholarship
+- Dean's List in all the semesters
+- GPA: 3.8/4.0
+
+**XYZ university (2016-2018)**, Master of Engineering, Electrical and Computer Engineering
 
 
 ## Miscellaneous
 - Udacity Machine Learning (2019)
 - Winner
-- Basketball player
+-  
+- Cricket player in the local city club
 - Competitive gaming
-- Volunteer, ABC Food bank: Ut enim ad minim veniam
+- Writing poems

@@ -23,18 +23,18 @@ This project is designed to monitor system's hardware specification and  usage w
 -crontab      --- This is used to automate the usage script so that it runs after each interval so that the usage can be monitored later on.
 -queries.sql  --- This script contains the sql queries that a business may use when monitoring the usage information. 
 
-##Database Modelling
+## Database Modelling
 -`host_info` This is the host info
 
 
 # Test 
-This is one of the main steps in SLDC. I have tested my all the quries and the scripts localy first so that i donot get any kind of errors when running inside the script. This has helped me to save alot of time in debugging itself.
+This is one of the main steps in SLDC. I have tested my all the queries and the scripts localy first so that i donot get any kind of errors when running inside the script. This has helped me to save alot of time in debugging itself.
 
 
 
 # Deployment
 
-I have deployed the application with the help of Docker where we instantiated the psql database. All the information about the usage has been there only.
+I have deployed the application in the Github only. All the information about the usage has been there only.
 
 # Improvements
 
