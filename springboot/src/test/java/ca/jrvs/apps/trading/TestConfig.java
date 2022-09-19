@@ -11,19 +11,21 @@ import org.springframework.context.annotation.Configuration;
 import javax.sql.DataSource;
 
 @Configuration
-@ComponentScan(basePackages ={"ca.jrvs.apps.trading.dao"} )
+@ComponentScan(basePackages ={"ca.jrvs.apps.trading.dao","ca.jrvs.apps.trading.service"} )
 public class TestConfig {
 
     @Bean
-public MarketDataConfig marketDataConfig(){
+    public MarketDataConfig marketDataConfig(){
     MarketDataConfig marketDataConfig = new MarketDataConfig();
-    marketDataConfig.setHost("htps://cloud.iexapis.com/v1/");
-    marketDataConfig.setToken("IEX_PUB_TOKEN");
+    marketDataConfig.setHost("https://cloud.iexapis.com/v1/");
+    marketDataConfig.setToken(System.getenv("IEX_PUB_TOKEN"));
+        System.out.println();
+
     return marketDataConfig;
 }
 
-@Bean
-public DataSource dataSource(){
+    @Bean
+    public DataSource dataSource(){
 
     System.out.println("Creating apacheDatasource");
 //    String url = "jdbc:postgresql://" +

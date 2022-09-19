@@ -24,7 +24,7 @@ public class IexQuote {
         public double low;
         public long lowTime;
         public String lowSource;
-        public double latestPrice;
+        public double latestPrice = 0.0;
         public String latestSource;
         public String latestTime;
         public long latestUpdate;
@@ -49,7 +49,7 @@ public class IexQuote {
         public int iexVolume;
         public int avgTotalVolume;
         public int iexBidPrice;
-        public int iexBidSize;
+        public int iexBidSize = 2;
         public int iexAskPrice;
         public int iexAskSize;
         public double iexOpen;

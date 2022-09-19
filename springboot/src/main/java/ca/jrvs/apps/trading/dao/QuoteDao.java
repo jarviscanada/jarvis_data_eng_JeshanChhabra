@@ -16,7 +16,9 @@ import org.springframework.jdbc.core.simple.SimpleJdbcInsert;
 import org.springframework.stereotype.Repository;
 
 import javax.sql.DataSource;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 
 @Repository
@@ -41,14 +43,16 @@ public class QuoteDao implements CrudRepository<Quote,String> {
 
     @Override
     public Quote save(Quote quote) {
-        if (existsById(quote.getId())){
+        if (existsById(quote.getId())) {
             int updateRowNo = updateOne(quote);
-            if (updateRowNo != 1){
+            if (updateRowNo != 1) {
                 throw new DataRetrievalFailureException("Unable to update quote");
-            }else{
-                addOne(quote);
             }
-        }
+        }else{
+
+            addOne(quote);
+            }
+
         return quote;
     }
 
@@ -56,17 +60,28 @@ public class QuoteDao implements CrudRepository<Quote,String> {
 
 
     private void addOne(Quote quote){
-        SqlParameterSource parameterSource = new BeanPropertySqlParameterSource(quote);
-        int row = simpleJdbcInsert.execute(parameterSource);
+        Map<String, Object> parameters = new HashMap<String, Object>();
+        parameters.put("ticker", quote.getId());
+        parameters.put("last_price", quote.getLastPrice());
+        parameters.put("bid_price", quote.getBidPrice());
+        parameters.put("bid_size", quote.getBidSize());
+        parameters.put("ask_price", quote.getAskPrice());
+        parameters.put("ask_size", quote.getAskSize());
+
+       // SqlParameterSource parameterSource = new BeanPropertySqlParameterSource(quote);
+
+
+        int row = simpleJdbcInsert.execute(parameters);
         if (row != 1){
             throw new IncorrectResultSizeDataAccessException("Failed to insert",1,row);
         }
     }
 
     private int updateOne(Quote quote){
-         String update_sql = "UPDATE quote SET last_price=?, bid_price=?, " +
-                 "bid_size=?, ask_price=?, ask_size WHERE ticker=?";
-        return jdbcTemplate.update(update_sql,makeUpdateValues(quote));
+        System.out.println("IN UPDATE");
+         String update_sql = "UPDATE quote SET last_price=?, bid_price=?,bid_size=?, ask_price=?, ask_size=? WHERE ticker=?";
+        return jdbcTemplate.update(update_sql,quote.getLastPrice(),quote.getBidPrice(),quote.getBidSize()
+                ,quote.getAskPrice(),quote.getAskSize(),quote.getId());
     }
 
 
@@ -77,7 +92,8 @@ public class QuoteDao implements CrudRepository<Quote,String> {
      */
     private Object[] makeUpdateValues(Quote quote){
         Object[] values = new Object[]{quote.getLastPrice(),quote.getBidPrice(),quote.getBidSize()
-        ,quote.getAskPrize(),quote.getAskSize(),quote.getId()};
+        ,quote.getAskPrice(),quote.getAskSize(),quote.getId()};
+
         return values;
     }
 
@@ -112,8 +128,9 @@ public class QuoteDao implements CrudRepository<Quote,String> {
 
     @Override
     public boolean existsById(String ticker) {
-        int tickerCount = this.jdbcTemplate.queryForObject("select count(*) FROM " + TABLE_NAME + " WHERE ticker = ?", Integer.class,ticker);
+        int tickerCount = jdbcTemplate.queryForObject("select count(*) from quote where ticker = ?",Integer.class,ticker);
         if (tickerCount == 1){
+            System.out.println("hnji");
             return true;
         }
         return false ;
@@ -132,7 +149,8 @@ public class QuoteDao implements CrudRepository<Quote,String> {
 
     @Override
     public void deleteById(String ticker) {
-        String deleteSql = "DELETE FROM quote WHERE ticker" + " =?";
+        System.out.println("delete");
+        String deleteSql = "DELETE FROM quote WHERE ticker =?";
         jdbcTemplate.update(deleteSql,ticker);
     }
 

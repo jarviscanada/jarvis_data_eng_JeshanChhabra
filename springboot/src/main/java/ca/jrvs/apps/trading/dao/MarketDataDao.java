@@ -31,6 +31,7 @@ import java.util.List;
 import java.util.Optional;
 
 
+
 public class MarketDataDao implements CrudRepository<IexQuote,String> {
 
     private static String IEX_BATCH_PATH = "stock/market/batch?symbols=%s&types=quote&token=";
@@ -133,6 +134,7 @@ public class MarketDataDao implements CrudRepository<IexQuote,String> {
 
         HttpUriRequest request = new HttpGet(url);
         try {
+
             HttpResponse response = httpClient.execute(request);
 
             String jsonStr = EntityUtils.toString(response.getEntity());

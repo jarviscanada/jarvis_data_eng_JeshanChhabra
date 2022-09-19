@@ -6,10 +6,17 @@ public class Quote implements Entity<String>{
     private Double lastPrice;
     private Double bidPrice;
     private Integer bidSize;
-    private Double askPrize;
+    private Double askPrice;
     private Integer askSize;
 
 
+    public String getTicker() {
+        return ticker;
+    }
+
+    public void setTicker(String ticker) {
+        this.ticker = ticker;
+    }
 
     @Override
     public String getId() {
@@ -46,12 +53,12 @@ public class Quote implements Entity<String>{
         this.bidSize = bidSize;
     }
 
-    public Double getAskPrize() {
-        return askPrize;
+    public Double getAskPrice() {
+        return askPrice;
     }
 
-    public void setAskPrize(Double askPrize) {
-        this.askPrize = askPrize;
+    public void setAskPrice(Double askPrize) {
+        this.askPrice = askPrize;
     }
 
     public Integer getAskSize() {
@@ -69,7 +76,7 @@ public class Quote implements Entity<String>{
                 ", lastPrice=" + lastPrice +
                 ", bidPrice=" + bidPrice +
                 ", bidSize=" + bidSize +
-                ", askPrize=" + askPrize +
+                ", askPrice=" + askPrice +
                 ", askSize=" + askSize +
                 '}';
     }

@@ -33,7 +33,6 @@ public class AppConfig {
            return marketDataConfig;
     }
 
-
     @Bean
     public DataSource dataSource() {
         String jdbcUrl =
