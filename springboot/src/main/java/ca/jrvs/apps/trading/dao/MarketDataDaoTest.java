@@ -28,7 +28,7 @@ public class MarketDataDaoTest {
 
     @Test
     public void findByTicker() {
-        String ticker = "AAPL";
+        String ticker = "HH";
         IexQuote iexQuote = dao.findById(ticker).get();
         assertEquals(ticker,iexQuote.getSymbol());
     }

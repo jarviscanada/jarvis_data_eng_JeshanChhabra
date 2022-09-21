@@ -5,7 +5,7 @@ import ca.jrvs.apps.trading.TestConfig;
 import ca.jrvs.apps.trading.dao.QuoteDao;
 import ca.jrvs.apps.trading.model.domain.IexQuote;
 import ca.jrvs.apps.trading.model.domain.Quote;
-import org.junit.Before;
+import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,12 +13,13 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.jdbc.Sql;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import javax.validation.constraints.AssertTrue;
 import java.util.ArrayList;
 import java.util.List;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes={TestConfig.class})
-@Sql({"classpath:schema.sql"})
+//@Sql({"classpath:schema.sql"})
 public class QuoteServiceIntTest {
 
     @Autowired
@@ -36,6 +37,7 @@ public class QuoteServiceIntTest {
     public void findIexQuoteByTicker(){
         String ticker = "AAPL";
         IexQuote iexQuote = quoteService.findIexQuoteByTicker(ticker);
+
         System.out.println(iexQuote.getSymbol());
     }
 
@@ -53,13 +55,14 @@ public class QuoteServiceIntTest {
     }
 
     @Test
-    public void saveQuote(){
+    public void findQuoteByTicker(){
+        System.out.println(quoteService.findIexQuoteByTicker("qw"));
 
     }
 
     @Test
     public void findAllQuotes(){
-List<Quote> quotes = quoteService.findAllQuotes();
+        List<Quote> quotes = quoteService.findAllQuotes();
         System.out.println(quotes);
     }
 

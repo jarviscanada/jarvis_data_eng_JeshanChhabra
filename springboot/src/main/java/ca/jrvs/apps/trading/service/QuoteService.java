@@ -33,7 +33,10 @@ public class QuoteService {
     }
 
     public IexQuote findIexQuoteByTicker(String ticker){
-        return marketDataDao.findById(ticker).orElseThrow(() -> new IllegalArgumentException(ticker + "is invalid"));
+        IexQuote quote =  marketDataDao.findById(ticker).get();
+        System.out.println(quote);
+//        return marketDataDao.findById(ticker).get();
+        return quote;
     }
 
     public List<IexQuote> findAllIexQuoteByTicker(List<String> tickers){
@@ -49,12 +52,6 @@ public class QuoteService {
      */
     public void updateMarketData(){
        List<Quote> quotes = quoteDao.findAll();
-        quotes.forEach(quote -> {
-            System.out.println(buildQuoteFromIexQuote(findIexQuoteByTicker(quote.getTicker())));
-        });
-
-
-
        quotes.forEach(quote -> {
            quoteDao.save(buildQuoteFromIexQuote(findIexQuoteByTicker(quote.getTicker())));
        });
@@ -69,7 +66,6 @@ public class QuoteService {
      */
     protected static Quote buildQuoteFromIexQuote(IexQuote iexQuote){
        Quote quote = new Quote();
-
         quote.setTicker(iexQuote.getSymbol());
         quote.setLastPrice(iexQuote.getLatestPrice());
         quote.setAskPrice((double)iexQuote.getIexAskPrice());

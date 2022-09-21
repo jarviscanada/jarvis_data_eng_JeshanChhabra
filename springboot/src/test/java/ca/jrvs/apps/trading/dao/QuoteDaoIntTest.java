@@ -40,9 +40,8 @@ public class QuoteDaoIntTest {
 
     @Test
     public void findAll(){
-
+    quoteDao.findAll();
     }
-
 
 //    @After
 //    public void deleteOne(){

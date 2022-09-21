@@ -130,7 +130,6 @@ public class QuoteDao implements CrudRepository<Quote,String> {
     public boolean existsById(String ticker) {
         int tickerCount = jdbcTemplate.queryForObject("select count(*) from quote where ticker = ?",Integer.class,ticker);
         if (tickerCount == 1){
-            System.out.println("hnji");
             return true;
         }
         return false ;
@@ -149,7 +148,6 @@ public class QuoteDao implements CrudRepository<Quote,String> {
 
     @Override
     public void deleteById(String ticker) {
-        System.out.println("delete");
         String deleteSql = "DELETE FROM quote WHERE ticker =?";
         jdbcTemplate.update(deleteSql,ticker);
     }

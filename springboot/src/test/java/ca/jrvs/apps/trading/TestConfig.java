@@ -1,5 +1,6 @@
 package ca.jrvs.apps.trading;
 
+import ca.jrvs.apps.trading.dao.MarketDataDao;
 import ca.jrvs.apps.trading.model.config.MarketDataConfig;
 import org.apache.commons.dbcp2.BasicDataSource;
 import org.apache.http.conn.HttpClientConnectionManager;
@@ -51,12 +52,20 @@ public class TestConfig {
 
 }
 
-@Bean
-public HttpClientConnectionManager httpClientConnectionManager(){
-    PoolingHttpClientConnectionManager cm = new PoolingHttpClientConnectionManager();
-    cm.setMaxTotal(50);
-    cm.setDefaultMaxPerRoute(50);
-    return cm;
-}
+    @Bean
+    public MarketDataDao marketDataDao(MarketDataConfig marketDataConfig){
+        PoolingHttpClientConnectionManager cm = new PoolingHttpClientConnectionManager();
+        cm.setMaxTotal(50);
+        cm.setDefaultMaxPerRoute(50);
+        return new MarketDataDao(cm,marketDataConfig);
+    }
+
+//@Bean
+//public HttpClientConnectionManager httpClientConnectionManager(){
+//    PoolingHttpClientConnectionManager cm = new PoolingHttpClientConnectionManager();
+//    cm.setMaxTotal(50);
+//    cm.setDefaultMaxPerRoute(50);
+//    return cm;
+//}
 
 }

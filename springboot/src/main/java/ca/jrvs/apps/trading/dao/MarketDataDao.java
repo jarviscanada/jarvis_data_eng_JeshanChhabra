@@ -101,13 +101,16 @@ public class MarketDataDao implements CrudRepository<IexQuote,String> {
 
         //Array of JSON documents
         JSONObject IexQuotesJson = new JSONObject(response);
+
   // looping the tickers to add them in arraylist
         for (String ticker : tickers) {
-            String jstr = IexQuotesJson.getJSONObject(ticker).getJSONObject("quote").toString();
+
             try {
+                String jstr = IexQuotesJson.getJSONObject(ticker).getJSONObject("quote").toString();
                 quote = JsonUtil.toObjectFromJson(jstr, IexQuote.class);
-            }catch(Exception e){
-                throw new RuntimeException("Cannot covert jason to object");
+            }
+            catch(Exception e){
+                throw new IllegalArgumentException("Invalid input");
             }
             iexQuote.add(quote);
         }
@@ -138,6 +141,9 @@ public class MarketDataDao implements CrudRepository<IexQuote,String> {
             HttpResponse response = httpClient.execute(request);
 
             String jsonStr = EntityUtils.toString(response.getEntity());
+
+
+
 
             return Optional.of(jsonStr);
         }catch(IOException e){
