@@ -34,7 +34,7 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_JeshanChha
 
 ## Professional Experiences
 
-**Software Developer, Jarvis (2022-present)**: Demonstrated expertise in translating client needs into easy-to-understand software solutions. Proficient in troubleshooting/debugging the applications to achieve quick results. Developed various projects with technologies like  JAVA,Springboot, Docker/ Sql and so on which has strengthened my skills and made me proficent in solving client needs.
+**Software Developer, Jarvis (2022-present)**: Demonstrated expertise in translating client needs into easy-to-understand software solutions. Proficient in troubleshooting/debugging applications to achieve quick results. Developed various projects with technologies like  JAVA, Springboot, Docker/ SQL and so on which has strengthened my skills and made me an efficient developer by working on latest industry standards
 
 **Junior Developer, Intransigence (April 2020 - September 2020)**: Developed UI/UX Components for the predefined business-idea and implemented endpoints as per the specifications. Angular.js and Node.js are used for the frontend and backend respectively.Tested the application with Cypress and manually with Postman.
 
